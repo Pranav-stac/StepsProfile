@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #53b6c1;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header {
+    background: #1abc9c;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slideInDown 1s ease-in-out;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+
+.logo, .right-logo {
+    height: 50px;
+    border-radius: 5px;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-section {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info h2 {
+    color: #34495e;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666;
+}
+
+.team_title {
+    color: #34495e;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.our_team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team_member {
+    /* background: linear-gradient(135deg, #6a82fb, #fc5c7d); */
+    background-color: #96adc4;
+    width: 260px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: #fff;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.team_member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.member_img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+}
+
+.member_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team_member h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.team_member .social_media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social_media .item {
+    font-size: 1.2em;
+    color: #fff;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.social_media .item:hover {
+    color: #f4f4f9;
+}
+
+.developed-by, .guided-by, .subsection {
+    background: #027779;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.guided-by {
+    background: #027779;
+    color: #fff;
+}
+
+.subsection {
+    background: #026118;
+    color: #fff;
+}
+
+footer {
+    background: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    animation: slideInUp 1s ease-in-out;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info h2 {
+        font-size: 1.5em;
+    }
+
+    .team_title {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    
+}
